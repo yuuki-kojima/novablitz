@@ -40,6 +40,10 @@
   margin-top: 10px;
   padding-top: 10px;
   overflow:auto;
+  -ms-overflow-style:none;
+  &::-webkit-scrollbar{
+    display:none;
+  }
   .card{
     float: left;
     margin-left: 14px;
