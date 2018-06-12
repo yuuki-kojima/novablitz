@@ -1,0 +1,35 @@
+#wrapper
+  #header
+    .header-title
+      %h1
+        = link_to "Let's Play NovaBlitz", root_path
+    .header-menu
+      %ul
+        %li
+          = link_to 'Card List', cards_path
+          = link_to 'Build Deck', ''
+  .search
+    .left-info
+      .aspect
+        %p Aspect
+        %ul
+          %li Arcane
+          %li Chaos
+          %li Divine
+          %li Nature
+          %li Tech
+    .right-info
+      .keyword
+        %p 検索：
+        %input#search-field{type: "text", placeholder: 'まだ機能していません。'}/
+      .type
+        %p タイプ： Unit / Power
+      .sub_type
+        %p サブタイプ：
+      .cost
+        %p コスト： 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10
+      .rarity
+        %p レアリティ： Common / Rare / Epic / Legendary
+  .cards
+    %ul
+      = render partial: "card", collection: @cards

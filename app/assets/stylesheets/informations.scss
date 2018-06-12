@@ -1,5 +1,6 @@
 body{
   background: url("NB-Banner-1500-Med.jpg") no-repeat center center;
+  background-size: cover;
   &::before{
     background-color: rgba(0,0,0,0.7);
     position: absolute;
@@ -15,7 +16,7 @@ body{
     width: 1000px;
     margin: 0 auto;
     height: 100vh;
-    #header{
+    #top-header{
       height: 300px;
       width: 600px;
       margin: 0 auto;

@@ -1,0 +1,50 @@
+#header{
+  height: 60px;
+  background-color: rgba(0,0,0,0.8);
+  .header-title{
+    width: 500px;
+    float: left;
+    h1{
+      line-height: 60px;
+      font-size: 30px;
+      margin-left: 20px;
+    }
+  }
+  .header-menu{
+    width: 500px;
+    float: right;
+    text-align: right;
+    a{
+      line-height: 60px;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+.search{
+  height: 200px;
+  background-color: rgba(0,0,0,0.8);
+  margin-top: 10px;
+  .left-info{
+    float: left;
+    width: 300px;
+    padding: 10px;
+  }
+  .right-info{
+    padding: 10px;
+  }
+}
+.cards{
+  height: calc(100vh - 310px);
+  background-color: rgba(0,0,0,0.8);
+  margin-top: 10px;
+  padding-top: 10px;
+  overflow:auto;
+  .card{
+    float: left;
+    margin-left: 14px;
+    img{
+      width: 150px;
+    }
+  }
+}
