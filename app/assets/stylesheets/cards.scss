@@ -22,20 +22,46 @@
   }
 }
 .search{
-  height: 200px;
+  height: 244px;
   background-color: rgba(0,0,0,0.8);
   margin-top: 10px;
+  .is_active{
+    color: #03559f;
+  }
   .left-info{
     float: left;
     width: 300px;
     padding: 10px;
+    .aspects{
+      p{
+        text-align: center;
+      }
+      .aspect{
+        li{
+          height: 100px;
+          width: 100px;
+          float: left;
+          line-height: 100px;
+          text-align: center;
+        }
+      }
+    }
   }
   .right-info{
     padding: 10px;
+    span+ span{
+      border-left: 1px solid white;
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+    span:hover{
+      color: #03559f;
+      text-decoration: underline;
+    }
   }
 }
 .cards{
-  height: calc(100vh - 310px);
+  height: calc(100vh - 350px);
   background-color: rgba(0,0,0,0.8);
   margin-top: 10px;
   padding-top: 10px;

@@ -10,26 +10,50 @@
           = link_to 'Build Deck', ''
   .search
     .left-info
-      .aspect
+      .aspects
         %p Aspect
-        %ul
+        %ul.aspect
           %li Arcane
           %li Chaos
           %li Divine
           %li Nature
           %li Tech
+          %li.all.is_active ALL
     .right-info
       .keyword
         %p 検索：
-        %input#search-field{type: "text", placeholder: 'まだ機能していません。'}/
+        %input#search-field{type: "text", placeholder: 'カード名で検索'}/
       .type
-        %p タイプ： Unit / Power
-      .sub_type
-        %p サブタイプ：
+        %p
+          タイプ：
+          %span.all.is_active ALL
+          %span Unit
+          %span Power
+      / .sub_type
+      /   %p
+      /     サブタイプ：
       .cost
-        %p コスト： 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10
+        %p
+          コスト：
+          %span.all.is_active ALL
+          %span 1
+          %span 2
+          %span 3
+          %span 4
+          %span 5
+          %span 6
+          %span 7
+          %span 8
+          %span 9
+          %span 10
       .rarity
-        %p レアリティ： Common / Rare / Epic / Legendary
+        %p
+          レアリティ：
+          %span.all.is_active ALL
+          %span Common
+          %span Rare
+          %span Epic
+          %span Legendary
   .cards
-    %ul
+    %ul#search-result
       = render partial: "card", collection: @cards
