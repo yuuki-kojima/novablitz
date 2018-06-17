@@ -1,3 +1,4 @@
+# coding: utf-8
 Card.create!([
   {name: "Acolyte of Halos", set: "Base Set", type: "Unit", sub_type: "Priest", aspect: "Divine", rarity: "Common", cost: 2, attack: 5, health: 5, image: "https://d1u5p3l4wpay3k.cloudfront.net/novablitz_gamepedia/thumb/4/48/Acolyte_of_Halos%28101048%29.png/200px-Acolyte_of_Halos%28101048%29.png?version=81701fdf268c1d134a050fd322bcee3e", content: "When you summon an Angel, this gets +3 Health.", content_jp: "自分の場にANGELを出す度に\nこのUnitの体力を＋3する。"},
   {name: "Acolyte of Horns", set: "Base Set", type: "Unit", sub_type: "Knight", aspect: "Divine", rarity: "Common", cost: 2, attack: 5, health: 5, image: "https://d1u5p3l4wpay3k.cloudfront.net/novablitz_gamepedia/thumb/b/b1/Acolyte_of_Horns%28101135%29.png/200px-Acolyte_of_Horns%28101135%29.png?version=521879bc7a935a2fd6a8dd1d29781371", content: "When you summon a Demon, this gets +3 Strength.", content_jp: "自分の場にDEMONを出す度に\nこのUnitの攻撃力を＋3する。"},
