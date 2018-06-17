@@ -76,6 +76,7 @@ GEM
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
     crass (1.0.4)
+    csv (1.0.0)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
     erb2haml (0.1.5)
@@ -245,6 +246,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   compass-rails!
+  csv
   erb2haml
   font-awesome-rails
   google-analytics-rails

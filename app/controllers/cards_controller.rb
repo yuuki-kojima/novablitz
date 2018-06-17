@@ -3,6 +3,14 @@ class CardsController < ApplicationController
     @cards = Card.all
   end
 
+  def show
+    @card = Card.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   def search
     @cards = Card.where('name LIKE(?)',"%#{params[:keyword]}%")
     if params[:aspects].present? && params[:aspects].exclude?("ALL")

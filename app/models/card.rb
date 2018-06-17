@@ -57,6 +57,17 @@ class Card < ApplicationRecord
     sleep(10)
   end
 
+  def input_jp_data
+    table = CSV.table('./app/assets/cardlist.csv')
+      table.each do |row|
+      card = Card.where("lower(name) = ?", row[:name].downcase).first
+      if card.present?
+        card.content_jp = row[:text]
+        card.save
+      end
+    end
+  end
+
   private
 
   def set_unit_params(ele, card_info)

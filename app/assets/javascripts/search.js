@@ -2,7 +2,7 @@ $(document).on('turbolinks:load', function() {
   function buildHTML(card){
 
     var html = `<li class="card">
-<img alt="Acolyte of Halos" src="${card.image}">
+<img alt="Acolyte of Halos" data-card-id="${card.id}" src="${card.image}">
 </li>`
     return html;
   }
@@ -47,7 +47,7 @@ $(document).on('turbolinks:load', function() {
         }
       })
       .fail(function(){
-        // alert('チャンピオン検索に失敗しました。');
+        alert('カード検索に失敗しました。');
       })
     }else{
       $("#search-result").empty();
@@ -107,5 +107,41 @@ $(document).on('turbolinks:load', function() {
     ajaxSearch();
   });
 
+  $(document).on("click", ".card",function(){
+      // $("#popup").empty();
+      var card_id = $(this).data('cardId');
+
+      $.ajax({
+        type: 'GET',
+        url: '/show',
+        data: { id: card_id},
+        dataType: 'json'
+      })
+      .done(function(card) {
+        if(card.text_jp != null){
+          var card_text = card.text_jp;
+        }else{
+          var card_text = card.text;
+        }
+        $(".card-info__image img").attr('src', card.image);
+        $('.card-info-right__name p').text(card.name);
+        $('.card-info-right__aspect p').text(`Aspect：${card.aspect}`);
+        $('.card-info-right__type p').text(`Type：${card.type}`);
+        if(card.sub_type !== ''){
+        $('.card-info-right__sub-type p').text(`Race：${card.sub_type}`);
+        }else{
+        $('.card-info-right__sub-type p').text("");
+        }
+        $('.card-info-right__text p').text(card_text);
+        $('.popup').show();
+      })
+      .fail(function(){
+        alert('カード検索に失敗しました。');
+      })
+  });
+
+  $(document).on("click", ".close", function(){
+    $('.popup').hide();
+  });
 
 });
