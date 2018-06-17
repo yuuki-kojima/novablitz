@@ -1,8 +1,8 @@
 $(document).on('turbolinks:load', function() {
   function buildHTML(card){
 
-    var html = `<li class="card">
-<img alt="Acolyte of Halos" data-card-id="${card.id}" src="${card.image}">
+    var html = `<li class="card" data-card-id="${card.id}">
+<img alt="Acolyte of Halos" src="${card.image}">
 </li>`
     return html;
   }
