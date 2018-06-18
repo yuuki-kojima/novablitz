@@ -1,76 +1,88 @@
-#header{
-  height: 60px;
-  background-color: rgba(0,0,0,0.8);
-  .header-title{
-    width: 500px;
-    float: left;
-    h1{
-      line-height: 60px;
-      font-size: 30px;
-      margin-left: 20px;
-    }
-  }
-  .header-menu{
-    width: 500px;
-    float: right;
-    text-align: right;
-    a{
-      line-height: 60px;
-      font-size: 20px;
-      margin-right: 20px;
-    }
-  }
-}
 .search{
+  width: 1000px;
   height: 244px;
-  background-color: rgba(0,0,0,0.8);
-  margin-top: 10px;
-  .is_active{
-    color: #03559f;
-  }
+  background-color: black;
+  margin: 0 auto;
   .left-info{
     float: left;
     width: 300px;
     padding: 10px;
+    .is_active{
+      color: #ff0000;
+      border: 1px solid #ff0000 !important;
+    }
     .aspects{
       p{
         text-align: center;
       }
       .aspect{
         li{
-          height: 100px;
-          width: 100px;
+          box-sizing: border-box;
+          border: 1px solid white;
+          height: 90px;
+          width: 90px;
           float: left;
-          line-height: 100px;
+          line-height: 90px;
           text-align: center;
+          margin: 5px;
+          &:hover{
+            color: #ff0000;
+            border-color: #ff0000;
+          }
+        }
+        .arcane{
+          background-color: rgba(148,46,253,0.3);
+        }
+        .chaos{
+          background-color: rgba(217,77,44,0.3);
+        }
+        .divine{
+          background-color: rgba(255,255,0,0.5);
+        }
+        .nature{
+          background-color: rgba(123,205,7,0.3);
+        }
+        .tech{
+          background-color: rgba(173,174,173,0.3);
         }
       }
     }
   }
   .right-info{
     padding: 10px;
+    .is_active{
+      color: #ff0000;
+    }
     span+ span{
       border-left: 1px solid white;
       margin-left: 10px;
-      padding-left: 10px;
+      padding-left: 15px;
     }
     span:hover{
-      color: #03559f;
+      color: #ff0000;
       text-decoration: underline;
+    }
+    tr{
+      height: 35px;
+      .name{
+        width: 90px;
+        padding-right: 10px;
+        &::after{
+          content:":";
+          float: right;
+        }
+      }
     }
   }
 }
 .cards{
-  height: calc(100vh - 350px);
-  background-color: rgba(0,0,0,0.8);
+  background-color: black;
+  height: auto;
+  width: 1000px;
+  margin: 0 auto;
   margin-top: 10px;
   padding-top: 10px;
-  overflow:auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style:none;
-  &::-webkit-scrollbar{
-    display:none;
-  }
+  overflow: hidden;
   .card{
     float: left;
     margin-left: 14px;
@@ -80,56 +92,6 @@
     &:hover{
       opacity: 0.5;
       z-index: 2;
-    }
-  }
-}
-
-.card-info{
-  z-index: 1;
-  display: none;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  margin: auto;
-  width: 500px;
-  height: 300px;
-  background-color: black;
-  opacity: 0.97;
-  padding: 20px;
-  box-shadow: 0 0 8px gray;
-  &__image{
-    float: left;
-  }
-  .card-info-right{
-    position: relative;
-    height: 100%;
-    width: 280px;
-    float: right;
-    &__name{
-      text-align: center;
-      font-size: 20px;
-      border-bottom: 1px solid white;
-      margin-bottom: 10px;
-    }
-    &__text{
-      border-top: 1px solid white;
-      margin-top: 10px;
-      padding-top: 10px;
-    }
-    .button-wrapper{
-      text-align: center;
-      .close{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 30px;
-        border:1px solid white;
-        background-color: black;
-        color: #fff;
-      }
     }
   }
 }

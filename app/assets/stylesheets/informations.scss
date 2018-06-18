@@ -1,45 +1,15 @@
-body{
-  background: url("NB-Banner-1500-Med.jpg") no-repeat center center;
-  background-size: cover;
-  min-width: 1000px;
-  &::before{
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: ' ';
-    min-width: 1000px;
+.information{
+  background-color: black;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  .title{
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    margin-bottom: 20px;
   }
-  #wrapper{
-    color: white;
-    position: relative;
-    width: 1000px;
-    margin: 0 auto;
-    height: 100vh;
-    #top-header{
-      height: 300px;
-      width: 600px;
-      margin: 0 auto;
-      text-align: center;
-      h1{
-        line-height: 100px;
-        font-size: 100px;
-        padding-top: 50px;
-      }
-      p{
-        font-size: 20px;
-      }
-    }
-    #main{
-      text-align: center;
-      #menu{
-        li{
-          font-size: 50px;
-          font-weight: bold;
-        }
-      }
-    }
+  ul{
+    font-size: 30px;
   }
 }

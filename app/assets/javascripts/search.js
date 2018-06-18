@@ -9,6 +9,7 @@ $(document).on('turbolinks:load', function() {
 
   function ajaxSearch(){
     var input = obj.val();
+    var sub_type_input = sub_type_obj.val();
     var aspects = [];
     $.each($('.aspect .is_active'), function(i, value) {
       aspects.push(value.innerText);
@@ -30,11 +31,11 @@ $(document).on('turbolinks:load', function() {
       rarites.push(value.innerText);
     });
 
-    if(input != '' || aspects.length != 0 || types.length != 0 || costs.length != 0 || rarites != 0){
+    if(input != '' || sub_type_input != '' || aspects.length != 0 || types.length != 0 || costs.length != 0 || rarites != 0){
       $.ajax({
         type: 'GET',
         url: '/search',
-        data: { keyword: input, aspects: aspects, types: types, costs:costs, rarites:rarites},
+        data: { keyword: input, sub_type_keyword: sub_type_input, aspects: aspects, types: types, costs:costs, rarites:rarites},
         dataType: 'json'
       })
       .done(function(cards) {
@@ -54,11 +55,31 @@ $(document).on('turbolinks:load', function() {
     }
   }
 
+  function MouseMoveFunc(e){
+    if(e.pageX < window.innerWidth/2){
+      var mouse_x = e.clientX + 5;
+    }else{
+      var mouse_x = e.pageX - $('.card-info').width() - 50;
+    }
+    var mouse_y = $(window).scrollTop() + e.clientY - 350;
+    $(".card-info").css({
+      "position": "absolute",
+            "left": mouse_x,
+      "top": mouse_y
+    });
+  }
+
   var obj = $('#search-field');
   obj.val('');
   obj.on("keyup", function() {
     ajaxSearch();
   });
+
+  var sub_type_obj = $('.search-sub-type');
+  sub_type_obj.val('');
+  sub_type_obj.on("keyup", function(){
+    ajaxSearch();
+  })
 
   var aspect_obj = $('.aspect li');
   aspect_obj.on("click", function(){
@@ -107,10 +128,8 @@ $(document).on('turbolinks:load', function() {
     ajaxSearch();
   });
 
-  $(document).on("click", ".card",function(){
-      // $("#popup").empty();
+  $(document).on("click", ".card",function(e){
       var card_id = $(this).data('cardId');
-
       $.ajax({
         type: 'GET',
         url: '/show',
@@ -133,6 +152,7 @@ $(document).on('turbolinks:load', function() {
         $('.card-info-right__sub-type p').text("");
         }
         $('.card-info-right__text p').text(card_text);
+        MouseMoveFunc(e);
         $('.popup').show();
       })
       .fail(function(){

@@ -13,6 +13,9 @@ class CardsController < ApplicationController
 
   def search
     @cards = Card.where('name LIKE(?)',"%#{params[:keyword]}%")
+    if params[:sub_type_keyword].present?
+      @cards = @cards.where('sub_type LIKE(?)',"%#{params[:sub_type_keyword]}%")
+    end
     if params[:aspects].present? && params[:aspects].exclude?("ALL")
       @cards = @cards.where(aspect: params[:aspects])
     end

@@ -1,78 +1,60 @@
 - @page_title = "Card Lists (カード一覧 日本語)"
-#wrapper
-  .card-info.popup
-    .card-info__image
-      =image_tag "https://d1u5p3l4wpay3k.cloudfront.net/novablitz_gamepedia/thumb/5/5c/Ancient_Egg%28101251%29.png/200px-Ancient_Egg%28101251%29.png?version=6194c1683147a5960448b850ef4a67d6"
-    .card-info-right
-      .card-info-right__name
-        %p Ancient Egg
-      .card-info-right__aspect
-        %p Aspect：
-      .card-info-right__type
-        %p Type：Unit
-      .card-info-right__sub-type
-        %p Race：ゴブリン
-      .card-info-right__text
-        %p Last Breath: デッキの一番上にあるユニットをエリアに出す。
-      .button-wrapper
-        %button.close
-          %span
-            CLOSE
-  #header
-    .header-title
-      %h1
-        = link_to "Let's Play NovaBlitz", root_path
-    .header-menu
-      %ul
-        %li
-          = link_to 'Card List', cards_path
-          = link_to 'Build Deck', ''
+#main
+  = render partial: "card-info"
   .search
     .left-info
       .aspects
         %p Aspect
         %ul.aspect
-          %li Arcane
-          %li Chaos
-          %li Divine
-          %li Nature
-          %li Tech
+          %li.arcane Arcane
+          %li.chaos Chaos
+          %li.divine Divine
+          %li.nature Nature
+          %li.tech Tech
           %li.all.is_active ALL
     .right-info
-      .keyword
-        %p 検索：
-        %input#search-field{type: "text", placeholder: 'カード名で検索'}/
-      .type
-        %p
-          タイプ：
-          %span.all.is_active ALL
-          %span Unit
-          %span Power
-      / .sub_type
-      /   %p
-      /     サブタイプ：
-      .cost
-        %p
-          コスト：
-          %span.all.is_active ALL
-          %span 1
-          %span 2
-          %span 3
-          %span 4
-          %span 5
-          %span 6
-          %span 7
-          %span 8
-          %span 9
-          %span 10
-      .rarity
-        %p
-          レアリティ：
-          %span.all.is_active ALL
-          %span Common
-          %span Rare
-          %span Epic
-          %span Legendary
+      %table
+        %tr.keyword
+          %td.name
+            カード名
+          %td
+            %input#search-field{type: "text", placeholder: 'カード名で検索'}/
+        %tr.sub_type
+          %td.name
+            種族
+          %td
+            %input.search-sub-type{type: "text", placeholder: '種族で検索'}/
+        %tr.type
+          %td.name
+            タイプ
+          %td
+            %span.all.is_active ALL
+            %span Unit
+            %span Power
+        %tr.cost
+          %td.name
+            コスト
+          %td
+            %span.all.is_active ALL
+            %span 1
+            %span 2
+            %span 3
+            %span 4
+            %span 5
+            %span 6
+            %span 7
+            %span 8
+            %span 9
+            %span 10
+        %tr.rarity
+          %td.name
+            レアリティ
+          %td
+            %span.all.is_active ALL
+            %span Common
+            %span Rare
+            %span Epic
+            %span Legendary
   .cards
     %ul#search-result
       = render partial: "card", collection: @cards
