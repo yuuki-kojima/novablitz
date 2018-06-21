@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
   def index
-    @cards = Card.all
+    @cards = Card.all.order('cost, name')
   end
 
   def show
@@ -28,6 +28,7 @@ class CardsController < ApplicationController
     if params[:rarites].present? && params[:rarites].exclude?("ALL")
       @cards = @cards.where(rarity: params[:rarites])
     end
+    @cards = @cards.order('cost, name')
     respond_to do |format|
       format.html
       format.json
