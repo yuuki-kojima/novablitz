@@ -13,7 +13,7 @@ gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -23,6 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -53,7 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pry-rails'
-gem 'compass-rails', github: 'Compass/compass-rails'
+# gem 'compass-rails', github: 'Compass/compass-rails'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'json'
@@ -65,3 +66,12 @@ gem "sitemap_generator"
 gem 'whenever', require: false
 gem 'roboto'
 gem 'csv'
+gem 'devise'
+gem 'enum_select_rails'
+gem 'bootstrap'
+gem 'sprockets-rails'
+gem 'carrierwave'
+gem 'qiita-markdown'
+gem 'github-linguist'
+gem 'charlock_holmes'
+gem 'rugged'

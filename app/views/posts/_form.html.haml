@@ -1,0 +1,38 @@
+#main
+  .container
+    .row
+      .col-12
+        = form_for(@post) do |f|
+          .form_errors
+            - if @post.errors.any?
+              -@post.errors.full_messages.each do |message|
+                .alert.alert-danger
+                  =message
+          .form-group
+            = f.label :title, 'タイトル'
+            = f.text_field :title, placeholder: "タイトルを入力してください", required: true, class: "form-control"
+          .form-group
+            = f.label :category, 'カテゴリー'
+            = f.enum_select :category, {required: true, include_blank: false}, {class: "custom-select"}
+          .form-group
+            = f.label :image, '画像'
+            = f.file_field :image, class: 'form-control-file'
+          .form-group#editor.clearfix
+            = f.text_area :text, rows: '20', class: 'form-control', 'v-model' => "input", debounce: '50'
+            / .di_inline_t.preview
+            /   %div{ 'v-html' => 'input | marked'}
+          .col-12.text-center
+            = f.submit "送信", :class => 'btn btn-lg btn-primary mb-3'
+:javascript
+  marked.setOptions({breaks : true});
+  window.onload = function() {
+    new Vue({
+      el: '#editor',
+      data: {
+        input: "#{qiita_markdown(@post.text)}",
+      },
+      filters: {
+        marked: marked,
+      },
+    });
+  };

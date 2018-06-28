@@ -5,7 +5,7 @@
   margin: 0 auto;
   .left-info{
     float: left;
-    width: 300px;
+    width: 320px;
     padding: 10px;
     .is_active{
       color: #ff0000;
@@ -65,7 +65,7 @@
     tr{
       height: 35px;
       .name{
-        width: 90px;
+        width: 100px;
         padding-right: 10px;
         &::after{
           content:":";
@@ -86,6 +86,7 @@
   .card{
     float: left;
     margin-left: 14px;
+    background-color: black !important;
     img{
       width: 150px;
     }
