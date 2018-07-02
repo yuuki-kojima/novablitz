@@ -7,7 +7,6 @@ module ApplicationHelper
 
   def md_to_html(text)
     options = {
-      filter_html:     true,
       hard_wrap:       true,
       space_after_headers: true,
     }

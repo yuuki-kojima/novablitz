@@ -1,7 +1,7 @@
 #main
   .container
     .row
-      .col-lg-8
+      .col-sm-8.offset-sm-2
         .article
           %h1.title
             = @post.title
@@ -9,5 +9,5 @@
             = set_time(@post.updated_at)
           .content
             = md_to_html(@post.text)
-      .col-lg-4
-        .side-menu
+      / .col-lg-4
+      /   .side-menu

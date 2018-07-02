@@ -7,7 +7,7 @@
       %ul
         %li
           = link_to 'CARDS', cards_path
-          = link_to 'DECK BUILDER(作成中)', ''
+          / = link_to 'DECK BUILDER(作成中)', ''
           / = link_to 'このサイトについて', ''
           - if !user_signed_in?
             = link_to 'ログイン', new_user_session_path
