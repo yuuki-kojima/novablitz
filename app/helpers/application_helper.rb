@@ -5,9 +5,23 @@ module ApplicationHelper
     title
   end
 
-  def qiita_markdown(markdown)
-    processor = Qiita::Markdown::Processor.new(hostname: "example.com")
-    processor.call(markdown)[:output].to_s.html_safe
+  def md_to_html(text)
+    options = {
+      filter_html:     true,
+      hard_wrap:       true,
+      space_after_headers: true,
+    }
+
+    extensions = {
+      autolink:           true,
+      no_intra_emphasis:  true,
+      fenced_code_blocks: true,
+    }
+
+    renderer = Redcarpet::Render::HTML.new(options)
+    markdown = Redcarpet::Markdown.new(renderer, extensions)
+
+    markdown.render(text).html_safe
   end
 
   def set_time(time)

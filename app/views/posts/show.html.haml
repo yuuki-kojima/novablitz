@@ -8,6 +8,6 @@
           .meta
             = set_time(@post.updated_at)
           .content
-            = qiita_markdown(@post.text)
+            = md_to_html(@post.text)
       .col-lg-4
         .side-menu
