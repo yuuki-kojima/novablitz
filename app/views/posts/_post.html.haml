@@ -1,12 +1,13 @@
-.post.media{ style: "background: linear-gradient(to top, black, transparent), url(#{post.image.to_s}) center 20% " }
-  = link_to post do
-    %p.media-body
-      %strong.h4
-        = post.title
-      %br/
-      %small.text-muted
-        = set_time(post.updated_at)
-  - if current_user.admin?
-    .btn-group.admin-menu
-      = link_to "編集", edit_post_path(post), :class => "btn btn-sm btn-outline-secondary"
-      = link_to "削除", post_path(post), method: :delete, :class => "btn btn-sm btn-outline-secondary", data: {confirm: '削除してよろしいですか？'}
+.post.col-md-6.float-left.media
+  .media-wrapper{ style: "background: linear-gradient(to top, black, transparent), url(#{post.image.to_s}) no-repeat center / cover " }
+    = link_to post do
+      %p.media-body
+        %strong.h4
+          = post.title
+        %br/
+        %small.text-muted
+          = set_time(post.updated_at)
+    - if current_user.admin?
+      .btn-group.admin-menu
+        = link_to "編集", edit_post_path(post), :class => "btn btn-sm btn-outline-secondary"
+        = link_to "削除", post_path(post), method: :delete, :class => "btn btn-sm btn-outline-secondary", data: {confirm: '削除してよろしいですか？'}
