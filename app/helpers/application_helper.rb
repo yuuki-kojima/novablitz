@@ -47,7 +47,7 @@ module ApplicationHelper
         locale: 'ja_JP',
       },
       twitter: {
-        card: 'Summary with Large Image',
+        card: 'summary_large_image',
         title: "Let's Play NovaBlitz",
         site: '@_torike',
         image: image_url('site_image.png')
