@@ -1,3 +1,6 @@
+- set_meta_tags title: @post.title, twitter: { title: @post.title }
+- if @post.image.present?
+  - set_meta_tags twitter: {image: @post.image}
 #main
   .container
     .row
