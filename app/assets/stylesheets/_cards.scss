@@ -1,3 +1,10 @@
+.cards{
+  min-width: 1000px !important;
+  .container{
+
+  }
+}
+
 .search{
   width: 1000px;
   height: 244px;
@@ -75,7 +82,7 @@
     }
   }
 }
-.cards{
+.cards-result{
   background-color: black;
   height: auto;
   width: 1000px;
