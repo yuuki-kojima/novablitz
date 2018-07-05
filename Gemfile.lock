@@ -75,6 +75,10 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.5.0)
+    dotenv-rails (2.5.0)
+      dotenv (= 2.5.0)
+      railties (>= 3.2, < 6.0)
     enum_help (0.0.17)
       activesupport (>= 3.0.0)
     enum_select_rails (0.2.0)
@@ -442,6 +446,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   csv
   devise
+  dotenv-rails
   enum_select_rails
   erb2haml
   fog
