@@ -17,6 +17,12 @@
           .form-group
             = f.label :image, '画像'
             = f.file_field :image, class: 'form-control-file'
+          .form-group
+            = f.label :friendly_id_slugs, 'slug'
+            = f.text_field :friendly_id_slugs, class: 'form-control'
+          .form-group
+            = f.label :publish, 'publish'
+            = f.enum_select :publish, {required: true, include_blank: false}, {class: "custom-select"}
           .form-group#editor.clearfix
             = f.text_area :text, rows: '20', class: 'form-control'
           .col-12.text-center

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180621100822) do
+ActiveRecord::Schema.define(version: 20180705113610) do
 
   create_table "cards", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                                  null: false
@@ -34,9 +34,12 @@ ActiveRecord::Schema.define(version: 20180621100822) do
     t.string   "title"
     t.string   "image"
     t.integer  "category"
-    t.text     "text",       limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.text     "text",              limit: 65535
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "friendly_id_slugs"
+    t.boolean  "publish"
+    t.index ["friendly_id_slugs"], name: "index_posts_on_friendly_id_slugs", using: :btree
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
