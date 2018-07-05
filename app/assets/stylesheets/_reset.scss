@@ -88,8 +88,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-size:100%;
-    font-weight:normal;
+    // font-size:100%;
+    // font-weight:normal;
 }
 q:before,
 q:after {
@@ -136,7 +136,6 @@ a {
 
 body{
   background-color: #111;
-  min-width: 1000px;
   #wrapper{
     color: white;
     position: relative;
@@ -147,5 +146,9 @@ body{
         padding-bottom: 70px;
     }
   }
+}
+
+i{
+  font-family: FontAwesome;
 }
 

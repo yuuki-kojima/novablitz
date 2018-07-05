@@ -1,0 +1,16 @@
+- set_meta_tags title: @post.title, twitter: { title: @post.title }
+- if @post.image.present?
+  - set_meta_tags twitter: {image: @post.image}
+#main
+  .container
+    .row
+      .col-sm-8.offset-sm-2
+        .article
+          %h1.title
+            = @post.title
+          .meta
+            = set_time(@post.updated_at)
+          .content
+            = md_to_html(@post.text)
+      / .col-lg-4
+      /   .side-menu
