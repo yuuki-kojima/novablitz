@@ -1,0 +1,17 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  .container{
+    margin: 0 auto;
+    .contact{
+      text-align: center;
+      line-height: 50px;
+    }
+  }
+  &::before{
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,484 @@
+Name,Cost,Color,Type,Strength,Health,Race,Rarity,Text,Others
+GOBLIN FIREWORKS,0,赤,Power,-,-,-,Common,"1点×4回のランダムダメージを
+相手に与える（顔面含む）。",Armmorに無力
+BOOM TINKERER,1,赤,Unit,3,4,GOBLIN,Epic,"Active 2：「GOBLIN FIREWORKS」、「TEDDY BOMB」、「BOMB」
+のどれか1枚を手札に加える。
+",
+GOBLIN BATTLE CRY,1,赤,Power,-,-,-,Rare,"自分のデッキのランダムなGOBLIN３枚を
+デッキの一番上に移動させ、それらのカードを＋2/＋2する。","Goblin Rabbleなど分裂するタイプのゴブリンは、
+２体ともバフの影響を受ける"
+GOBLIN RABBLE,1,赤,Unit,2,2,GOBLIN,Common,Summon：Goblin Rabbleを1体召喚する。,"手札でバフ（デバフ）を受けた場合、summonで召喚される
+Goblin Rabbleもバフの影響を受ける"
+MUTATE,1,赤,Power,-,-,-,Rare,"Unit1体の攻撃と体力を入れ替える。
+その後、カードを1枚ドロー。",
+RAGING GOBLIN,1,赤,Unit,4,4,GOBLIN,Common,Can't Block,
+RAZORBIKER,1,赤,Unit,3,3,GOBLIN,Common,Initiative：＋2/0,
+RIFLE DWARF,1,赤,Unit,3,3,DWARF,Rare,"自分の場にChaos系のUnitを出す度に
+相手の一番多くダメージを受けているUnitに1点。",
+SMASH AND GRAB,1,赤,Power,-,-,-,Rare,"相手プレイヤーに3点ダメージ。
+その後、相手のデッキから1枚ドロー。",
+TAUNT,1,赤,Power,-,-,-,Common,"Unit１体に３点ダメージ。
+また、そのUnitはこのターン必ず攻撃しなければならない。",TAUNTを受けたUnitの攻撃は強制的に１番目になる。
+UNIBLASTER,1,赤,Unit,3,3,CONSTRUCT,Common,Last Breath：相手プレイヤーに３点ダメージ。,
+BOOST JUICE,2,赤,Power,-,-,-,Common,このターンだけ4エネルギー増える。,実質、２エネルギーの増加。
+CLOCK-W-ORC,2,赤,Unit,5,5,CONSTRUCT,Common,Frenzy,
+DWARF GUNNER,2,赤,Unit,5,5,DWARF,Common,Summon:相手に全体1点ダメージ（顔面含む）,
+FAYD,2,赤,Unit,5,4,SOLDIER,Rare,Active 2：対象のUnit1体の攻撃力を＋4,永続効果
+FRANTIC SEARCH,2,赤,Power,-,-,-,Common,手札を1枚ランダムに捨てて、2枚ドロー。,
+ORC CAPTAIN,2,赤,Unit,4,4,ORC,Rare,"このカード以外の自分のUnitが攻撃するときに、
+そのUnitの攻撃力を＋2する。",
+ROCKET SLED,2,赤,Unit,4,4,CONSTRUCT,Common,Initiative：＋3/0,
+STEAMWING SCOUT,2,赤,Unit,4,2,STEAMLORD,Common,Flying,
+TEDDY BOMB,2,赤,Power,-,-,-,Common,対象に6点ダメージ（相手プレイヤー可）。,
+TIMESTOP,2,赤,Power,-,-,-,Epic,対象のUnit以外をStunする。,
+WEIRDBOLT,2,赤,Power,-,-,-,Epic,"相手のUnitの数だけ2→3→4・・・と
+増加していくダメージをランダムに与える（相手プレイヤー含む）。",
+BOMB JUGGLER,2,赤,Unit,4,4,GOBLIN,Epic,ターン開始時に相手の手札に爆弾を送り込む。,"爆弾はターン終了時に爆発しプレイヤーは4点ダメージを受ける。
+２コスで相手プレイヤーに爆弾を渡せる。
+"
+ENDLESS WAR,2,赤,Power,-,-,-,Legendary,このターンはコンバットを2回行う。,
+ASSEMBLER ANTON,3,赤,Unit,4,4,STEAMLORD,Legendary,"Summon：このターンの最大エネルギーよりも
+低いコストのCONSTRUCTをランダムに召喚する。",
+CALL THE HORDE,3,赤,Power,-,-,-,Epic,"自分のデッキの攻撃力10以上の全てのUnitのコストが
+2減少し、さらにそれらのUnitはデッキの中で6枚上に移動する。",
+CHAOS BOOST,3,赤,Power,-,-,-,Common,"最大エネルギーが１増加。
+ランダムな相手Unit１体をスタンさせる。",
+CHARGE,3,赤,Power,-,-,-,Rare,自分の場のUnit全てがこのターン攻撃力＋4,
+CLOCKMAKER TOX,3,赤,Unit,3,9,STEAMLORD,Epic,"自分の場のCONSTRUCTが死んだとき
+自分のデッキからCONSTRUCTをドローする。
+また、自分の場のCONSTRUCTは攻撃力＋2。",
+CYCLOPULT,3,赤,Unit,7,5,CONSTRUCT,Epic,"Active 1：相手プレイヤーに３点ダメージ。
+さらに、相手のデッキに0コス1/1のUnitを1枚混ぜる。",
+GOBCOPTER,3,赤,Unit,4,4,CONSTRUCT,Common,"Flying
+Active 1：対象のUnit１体に2点ダメージ。",
+GOBLIN MECHANICS,3,赤,Unit,6,6,GOBLIN,Common,"Summon：自分の墓地から一番攻撃力の高い
+CONSTRUCTを手札に加える。",
+GOBLIN WARBAND,3,赤,Unit,4,3,GOBLIN,Rare,Summon：Goblin Warbandを１体召喚する。,Gobline Rabbleと同様。
+KRAG WARBAND,3,赤,Unit,10,4,OGRE,Common,バニラ,
+ORC BERSERKER,3,赤,Unit,3,9,ORC,Rare,"Frenzy
+Summon:全てのUnitに２点ダメージ。",実質、召喚時のスタッツは5/7
+RIGGED TO BLOW,3,赤,Power,-,-,-,Rare,全てのUnitとプレイヤーに6点ダメージ。,"プレイヤーのライフが同時に0になったときは、
+Powerカードを使用したプレイヤーの勝利
+"
+DESERT RAIDER,4,赤,Unit,8,8,SOLDIER,Common,バニラ,
+ENRAGE,4,赤,Power,-,-,-,Common,"このターン対象のUnit１体にOverrunを付与し、
+攻撃力を＋10する。",
+HERALD OF GIANTS,4,赤,Unit,5,8,SOLDIER,Common,"Summon:自分の手札の最もコストの
+高いUnitのコストを２減少させる。",
+JUNKYARD TANK,4,赤,Unit,7,7,CONSTRUCT,Rare,"Overrun
+自分のCONSTRUCTが死ぬ度に、
+そのUnitのコスト分(X)だけ＋X/＋Xされる。",
+OGRE ROCKETEER,4,赤,Unit,6,6,OGRE,Rare,Summon：ランダムな相手1体に6点ダメージ（顔面含む）。,
+TELEPORT,4,赤,Power,-,-,-,Epic,"ターン終了時まで自分の手札の中の
+最も攻撃力の高いUnitを場に召喚する。",
+MEGAZEPPELIN,4,赤,Unit,6,6,CONSTRUCT,Epic,"Flying
+自分のCONSTRUCTが死んだとき
+相手プレイヤーに4点ダメージを与える。",このカード自身が死んだときも４点ダメージ。
+WALKING BOMB,4,赤,Unit,3,7,CONSTRUCT,Legendary,"Attack：攻撃力＋2
+Last Breath：相手プレイヤーにこのUnitの攻撃力分の
+ダメージを与える。",
+WARBOSS SHIKA,4,赤,Unit,8,8,ORC,Legendary,"First Strike
+常にInitiativeを獲得する。",
+ANSERIFORM,5,赤,Power,-,-,-,Rare,対象のUnit１体を1/1のDuckに変える。,
+ATTRACTOR BOLT,5,赤,Power,-,-,-,Epic,ランダムに相手のUnit１体のコントロールを奪う。,
+BLASTBARREL OGRE,5,赤,Unit,8,8,OGRE,Rare,Summon:ランダムな相手Unit１体を２ターンスタンする。,
+SPLASH DAMAGE,5,赤,Power,-,-,-,Common,"対象のUnit１体に8点ダメージを与え、
+そのUnitがいる側の他のUnit全てに2点ダメージ。",
+SURPRISE ATTACK,5,赤,Power,-,-,-,Legendary,"ランダムなGOBLINを2体召喚し、Initiativeを獲得する。
+その後、スタンバイフェイズを終了しコンバットを開始する。",
+TINSNIPPER,5,赤,Unit,8,7,CONSTRUCT,Common,Attack：相手のUnit1体をランダムにスタン。,
+WARLORD GRUMAX,5,赤,Unit,11,9,MINOTAUR,Epic,"コスト3以下のUnitを召喚したとき、
+そのUnitの攻撃力分のダメージを相手の最も攻撃力の低いUnitに与える。",
+CHAOS AVATAR,6,赤,Unit,7,7,CONSTRUCT,Epic,"Double Attack
+Chaos系のカードを使用する度に
+このカードのコストが1減少する。",
+COAL COLOSSUS,6,赤,Unit,13,7,CONSTRUCT,Legendary,Attack：このカード以外の全てのUnit・プレイヤーに5点ダメージを与える。,プレイヤーのライフが同時に0担った場合は勝利
+GOATSTOMPER,6,赤,Unit,10,12,GIANT,Common,バニラ,
+RHINOSAUR,6,赤,Unit,10,9,MONSTER,Rare,Attack：相手全体に3点ダメージ（顔面含む）。,
+CLOCKWORK DRAGON,7,赤,Unit,15,15,CONSTRUCT,Legendary,"Flying
+Active 4：自分の場のコンストラクトの数×3点ダメージを相手全体に与える（顔面含む）。",
+I GOT A ROCK,7,赤,Power,-,-,-,Rare,対象に10点ダメージ（顔面可）。,
+OVERCHARGER,7,赤,Unit,9,9,CONSTRUCT,Common,"Overrun
+Active 2：攻撃力＋4",
+WORLDCRUSH GIANT,8,赤,Unit,20,20,GIANT,Legendary,"Overrun
+Last Breath：全てのUnitを破壊する。",
+DEVOURER,1,黄,Unit,3,3,DEMON,Common,"このカードが場に出ているとき
+他のUnitが死ぬ度にこのカードを＋1/＋1する。","Unitが死ぬとバフされる系のカードは
+攻撃する際は攻撃の順番は最後がオススメ
+"
+FINAL BLOW,1,黄,Power,-,-,-,Common,Unitを破壊する（ダメージを受けているUnitのみ指定可）。,
+HELLFIRE CULTIST,1,黄,Unit,2,2,PRIEST,Common,Last Breath：相手の全Unitに２点ダメージ。,
+HOLY HAMMERER,1,黄,Unit,2,7,KNIGHT,Common,バニラ,
+HOSPITALLER,1,黄,Unit,3,3,PRIEST,Common,Active 2：対象を４回復する（プレイヤー可、自分不可）。,
+PAINBRINGER,1,黄,Unit,5,2,DEMON,Rare,"Armor 1
+このカードがダメージを受けたとき
+自プレイヤーも同じダメージを受ける。",
+RAINBOW UNICORN,1,黄,Unit,2,5,UNICORN,Rare,"自分の場にDivine系のUnitを出す度に
+自プレイヤーを2回復する。",
+SANCTUM HEALER,1,黄,Unit,3,3,PRIEST,Common,Last Breath：自プレイヤーを5回復する。,
+SHIELD OF FAITH,1,黄,Power,-,-,-,Common,"対象のUnitを全回復する。
+さらに、回復した値と同じだけそのUnitの体力が増える。",
+VENGEANCE DEMON,1,黄,Unit,3,3,DEMON,Rare,"Flying
+Summon：自プレイヤーは3ダメージを受ける。",
+ACOLYTE OF HALOS,2,黄,Unit,5,5,PRIEST,Common,"自分の場にANGELを出す度に
+このUnitの体力を＋3する。",
+ACOLYTE OF HORNS,2,黄,Unit,5,5,KNIGHT,Common,"自分の場にDEMONを出す度に
+このUnitの攻撃力を＋3する。",
+CULL THE WEAK,2,黄,Power,-,-,-,Rare,体力6以下のUnitを全て破壊する。,
+DEMONIC CONTRACT,2,黄,Power,-,-,-,Epic,カードを４枚ドローし、自分の手札の数×２点のダメージを受ける。,最低でも８点ダメージを受ける
+DEMONIST,2,黄,Unit,5,4,PRIEST,Common,Summon：1/1のVictimを召喚する。,
+DISFAVOR,2,黄,Power,-,-,-,Common,相手の手札とデッキの全てのUnitが-1/-1される。,"Healthが1のUnitは、召喚時にHealthが０になっているため
+召喚すると即破壊される"
+EXORCIST,2,黄,Unit,6,4,PRIEST,Common,バニラ,
+HEAVEN'S GUARD,2,黄,Unit,4,4,KNIGHT,Common,"Double Block
+Block：このカードの体力＋2する。",
+HOLY BOLT,2,黄,Power,-,-,-,Rare,"対象1体に５点ダメージを与え、
+自プレイヤーは５回復する（相手プレイヤー可）。",
+MIST WITCH,2,黄,Unit,4,3,WITCH,Epic,"Summon：相手の手札にPower Curseを送り込む。
+Power Curse（2コスで消費可）が手札にある間は
+Powerカードを使えない。",
+PURIFY,2,黄,Power,-,-,-,Rare,"対象のUnit1体をPurifyする。その後、カードを1枚ドローする。
+（相手の全ての能力を封印する。Buffなども含む）","
+"
+WEAKNESS WITCH,2,黄,Unit,2,5,WITCH,Rare,"Summon：相手の手札にWeakness Curseを送り込む。
+Weakness Curse(３コスで消費可）が手札にある間は
+場に出すUnitが-1/-1される。","DISFAVORと同様。
+Healthが1のUnitは召喚時破壊される。"
+ARCHON OF DEATH,3,黄,Unit,6,4,ARCHON,Epic,Last Breath：自分の墓地にあるカードのLast Breathが全て発動する。,
+CHASTISE,3,黄,Power,-,-,-,Common,相手の手札の数×２点のダメージを相手プレイヤーに与える。,
+CULT LEADER,3,黄,Unit,4,7,PRIEST,Rare,"ターンの開始時に自分の場にVictimがいなければ、
+1/1のVictimを召喚する。",
+DEATHMARK WITCH,3,黄,Unit,6,6,WITCH,Legendary,"Attack：相手の手札にDeathmark　Curseを送り込む。
+Deathmark Curse（３コスで消費可）を持っている間は
+毎ターンCurse系のカードの数×1ダメージを受ける。",
+DEMON OF BARGAINS,3,黄,Unit,9,9,DEMON,Common,ターンの開始時に毎回自プレイヤーは5点ダメージを受ける。,
+DEMON OF GREED,3,黄,Unit,8,5,DEMON,Common,バニラ,
+DIVINE BOOST,3,黄,Power,-,-,-,Common,"最大エネルギーが１増加。
+自プレイヤーは６回復する。",
+EYE FIEND,3,黄,Unit,12,8,DEMON,Common,Summon：自分の場の最も攻撃力が低いUnitを破壊する。,"自分の場にUnitがいない状態で召喚すると、
+このカード自身が破壊される。
+"
+PACIFISM,3,黄,Power,-,-,-,Common,Unit1体にCan't attackを付与する。,
+REDEEMER,3,黄,Unit,6,6,PRIEST,Rare,Active 2：Unit１体をPurifyする。,
+SHIELD WALL,3,黄,Power,-,-,-,Common,自分の場の全てのUnitの体力が＋6される。,
+STALWART PALADIN,3,黄,Unit,5,7,KNIGHT,Common,Vanguard,
+VENGEANCE,3,黄,Power,-,-,-,Rare,"自分の場の最も攻撃力が低いUnitと
+相手の場の最も攻撃力の高いUnitを破壊する。",
+REGAL UNICORN,3,黄,Unit,5,4,UNICORN,Epic,"Unitからダメージを受けない。
+（Unitの効果によるダメージも受けない）","
+"
+ANGEL,4,黄,Unit,7,7,ANGEL,Common,Flying,
+ANGEL OF RETRIBUTION,4,黄,Unit,6,6,ANGEL,Rare,"Flying
+自プレイヤーまたは自分のUnitが回復したとき
+このカードが＋3/＋3される。",Regenerateの効果で味方Unitが回復した場合も、効果が発動する。
+DEMON OF PAIN,4,黄,Unit,6,6,DEMON,Rare,"Overrun
+Active 1：自分の場のUnit１体を破壊して、
+このカードを＋4/＋4する。",
+DEVOUT SENTINEL,4,黄,Unit,7,10,KNIGHT,Common,Double Block,
+HELLFIRE STORM,4,黄,Power,-,-,-,Epic,"相手の全てのUnitに４点ダメージを与え、
+このターンCan't Blockを付与する。",
+HOLY LIGHT,4,黄,Power,-,-,-,Common,自プレイヤーを15回復する。,
+JUSTICE,4,黄,Power,-,-,-,Legendary,"お互いの手札の数と場のUnitの数が、
+同じ数になるように破壊される。
+（手札・場のUnit共に少ない方に合うように発動する）",
+ARCHON OF LIFE,5,黄,Unit,6,10,ARCHON,Epic,"このUnit以外の自分のUnitが死んだとき
+そのUnitは自分の手札に戻る。",
+DAMNATION,5,黄,Power,-,-,-,Rare,"Unit１体を破壊する。
+自分の場にDEMONがいるとき、このカードのコストは3減少する。",
+FLAYED DEMON,5,黄,Unit,10,6,DEMON,Rare,このUnit はダメージを受けるとFlyingが付与される。,
+JUDGEMENT,5,黄,Power,-,-,-,Common,全てのUnitを破壊する。,
+KARIEL,5,黄,Unit,8,8,ANGEL,Epic,"Flying
+Attack：相手の場の最も攻撃力が低いUnitに3点ダメージを与え、
+自プレイヤーを３回復する。",
+NIGHTMARE,5,黄,Unit,0,0,DEMON,Rare,お互いの墓地にあるUnitの数×＋2/＋2,
+ANGEL OF GLORY,6,黄,Unit,9,12,ANGEL,Rare,"Flying
+Active 2：このターンUnit１体にCan't Attackを付与する。",
+DIVINE AVATAR,6,黄,Unit,7,7,ARCHON,Epic,"Flying
+Divine系のカードを使用する度に
+このカードのコストが1減少する。",
+MADNESS,6,黄,Power,-,-,-,Epic,相手の手札の中の最もコストの高いカード2枚を破壊する。,
+LORD OF HEAVEN,6,黄,Unit,10,15,ANGEL,Legendary,"Flying, Double Block
+Summon：自分の場の全てのUnitの体力を全回復する。",
+LORD OF HELL,6,黄,Unit,10,10,DEMON,Legendary,"Flying
+Active 3：相手の場のUnitの数×＋2/＋2され、
+相手の場のUnitは全て-2/-2される。",
+BLOOD LORD,7,黄,Unit,6,6,DEMON,Epic,"Flying, Evade
+このカードが手札または場にあるときに、
+このカードは相手プレイヤー・相手Unitがダメージを受けた回数×＋2/＋2される。
+",
+ARCHANGEL,7,黄,Unit,14,14,ANGEL,Legendary,"Flying
+Attack：このターン自プレイヤーはダメージを受けない。",
+DEMONIC DRAGON,7,黄,Unit,14,14,DEMON,Legendary,"Flying
+Blockをする相手Unitは全て7点ダメージを受ける。",
+INFECTION DEMON,8,黄,Unit,11,11,DEMON,Epic,このカード以外のダメージを受けている全てのUnitは破壊される。,
+MIRACLE,8,黄,Power,-,-,-,Legendary,7/7のANGELを2体召喚し、自プレイヤーを７回復する。,
+SOUL SWAP,8,黄,Power,-,-,-,Legendary,プレイヤーの体力を入れ替える。,
+OVERSHOCK,0,白,Power,-,-,-,Rare,"対象のUnit1体をスタン。
+既にスタンしている場合は破壊する。",
+AEGIS INFANTRY,1,白,Unit,3,3,SOLDIER,Common,"自分の場にSOLDIERがいるとき
+このカードを＋1/＋1する。",
+ARMS DEALER,1,白,Unit,4,2,SOLDIER,Rare,"自分の場にTech系のUnitが召喚されたとき
+そのUnitの攻撃力を＋1する。",
+CYBORG RECRUIT,1,白,Unit,3,3,CYBORG,Rare,"このカードを対象としてPowerカードを使用すると
+このカードを＋2/＋2する。",
+ELECTROCUTE,1,白,Power,-,-,-,Common,コスト2以下のUnit1体を破壊する。,"元々のコストが３以上のカードでも
+場に出た際にコストが２以下であれば破壊できる。
+"
+MINDHACK,1,白,Power,-,-,-,Common,Unit1体にCan't Blockを付与する。,
+REINFORCEMENTS,1,白,Power,-,-,-,Rare,自分の場のUnit1体のコピーを手札に加える。,Unitのバフ（デバフ）の状態もコピーする。
+ROBO-CENTAUR,1,白,Unit,3,3,ROBOT,Common,First Strike,
+SHIELDCASTER MECH,1,白,Unit,3,3,ROBOT,Common,Active 1：このUnit以外の自分のUnitに＋1Armor,
+SHOCKWAVE,1,白,Power,-,-,-,Common,"相手Unit1体をスタンさせ、
+全ての相手Unitに1点ダメージを与える。",
+UNSTABLE CYBORG,1,白,Unit,3,4,CYBORG,Common,バニラ,
+AEGIS ELITE,2,白,Unit,5,5,SOLDIER,Epic,"相手Unitがスタンをする度に
+そのUnitに4点ダメージを与える。",
+AI HACK,2,白,Power,-,-,-,Epic,"このターン相手の手札のUnitのコストが2増加する。
+その後、自分は1枚ドローする。","このカードを使用した際に発生するエフェクトで
+相手の手札のUnitとPowerカードの枚数がわかる。
+"
+COMMS OFFICER,2,白,Unit,4,4,SOLDIER,Rare,Active 2：このターンUnit1体にCan't Blockを付与する。,
+DEFENSIVE FORMATION,2,白,Power,-,-,-,Common,自分の場と手札のUnitの体力を＋3する。,
+EMP BLAST,2,白,Power,-,-,-,Common,相手の場の最も攻撃力の高いUnit2体をスタンさせる。,
+HIVE DRONE,2,白,Unit,4,3,ROBOT,Common,"Flying, First Strike",
+HIVE SPY,2,白,Unit,2,7,NINJA,Rare,Infiltrate：1枚ドローする。,
+KRANK,2,白,Power,-,-,-,Epic,"Unit1体にDouble Attackを付与し、
+攻撃力を＋2する。",
+LOCKDOWN BOT,2,白,Unit,3,3,ROBOT,Common,Active 3：Unit１体をスタンさせる。,
+RESUPPLY,2,白,Power,-,-,-,Common,"自分のデッキの全てのUnitを＋1/＋1した後
+Unitを１枚ドローする。",
+TOWER GUARD,2,白,Unit,5,5,SOLDIER,Common,バニラ,
+UPGRADE,2,白,Power,-,-,-,Common,"Unit1体を攻撃力＋3,Armor＋3する。",
+SYSTEM OPERATIVE,2,白,Unit,5,5,HACKER,Legendary,自分のUnitのActiveが毎ターン2回使える。,
+ARMORED BLOCKADE,3,白,Unit,5,5,SOLDIER,Epic,"Armor 4
+Block：次にAttackする相手Unitをスタンさせる。",
+BLACK OPS TEAM,3,白,Unit,7,7,SOLDIER,Legendary,"このカードを対象としてPowerカードを使用したとき
+１枚ドローする。",
+CAPTAIN MARCOS,3,白,Unit,5,8,SOLDIER,Rare,Attack：このカード以外の自分の場の全てのUnitを＋1/＋1,
+ELITE HACKER,3,白,Unit,5,5,HACKER,Rare,Active 2：カードを1枚ドローする。,
+FLYBORG,3,白,Unit,6,4,CYBORG,Common,Flying,
+FORCEFIELD,3,白,Power,-,-,-,Epic,このターン自分の場の全てのUnitはArmor＋10を得る。,
+HYPERSTIM,3,白,Power,-,-,-,Rare,"Unit1体スタンさせ、次のターンの開始時に
+そのUnitを＋7/＋7する。",
+KESTREL NINJA,3,白,Unit,4,4,NINJA,Rare,"Flying
+Infiltrate：相手の最も攻撃力の高いUnitをスタンさせる。",
+MILITIA GUARD,3,白,Unit,4,7,SOLDIER,Common,ブロック時にこのターン攻撃力＋4する。,
+STRIKE MECH,3,白,Unit,6,6,ROBOT,Common,Armor 2,
+SUPPRESSION GEL,3,白,Power,-,-,-,Rare,相手の場の全てのUnitの攻撃力は3まで減少する。,
+TECH BOOST,3,白,Power,-,-,-,Common,"最大エネルギーが１増加。
+カードを１枚ドローする。",
+TOTAL RECALL,3,白,Power,-,-,-,Common,Unitを２枚ドローする。,
+ASSAULT GUNSHIP,4,白,Unit,6,8,AIRCRAFT,Rare,"Flying, Vanguard",
+ASSAULT TROOPER,4,白,Unit,7,7,SOLDIER,Common,"自分の場にSOLDIERがいるとき
+このカードを＋3/＋3し、Flyingを付与する。","Flying付与状態で相手UnitのFlyingをBlockするとき、
+Block処理前に味方のSOLDIERが破壊されたときはBlockできなくなる
+"
+C-REX,4,白,Unit,6,6,CYBORG,Legendary,"First Strike, Double Attack, Frenzy, Armor 2",
+FIELD MEDIC,4,白,Unit,6,9,SOLDIER,Common,"Summon：自分の場の最もダメージを受けているUnitを
+全回復する。",
+FIGHTER-BOMBER,4,白,Unit,6,6,AIRCRAFT,Epic,"Flying
+Summon：相手の場のFlyingを持っていない
+全てのUnitに３点ダメージを与える。",
+FOR THE CAUSE!,4,白,Power,-,-,-,Epic,自分の場の全てのUnitを＋4/＋4する。,
+HIVE SNIPER,4,白,Unit,6,6,SOLDIER,Epic,"First Strike, Evade
+Active 1：Unit1体に４点ダメージを与える。",
+HOLO-GLOBE,4,白,Power,-,-,-,Rare,カードを3枚ドローする。,
+SHADOW NINJA,4,白,Unit,8,7,NINJA,Rare,Summon：相手の場のコスト2以下で最も攻撃力の低いUnitを破壊する。,
+GENERAL BOZ,5,白,Unit,9,9,SOLDIER,Legendary,このカード以外の自分の場の全てのUnitはDouble Attackを得る。,
+HOVERTANK MARK Ⅳ,5,白,Unit,8,8,TANK,Epic,Active 3：コスト3以下のUnit1体を破壊する。,
+OCTOBORG,5,白,Unit,8,8,CYBORG,Rare,"Vanguard, Armor 3",
+SUPPORT BOT,5,白,Unit,5,10,ROBOT,Common,Attack：次にAttackする味方Unitの攻撃力をこのターン＋7する。,
+"VARYN, THE HIDDEN",5,白,Unit,12,9,NINJA,Epic,"Summon：自分の場のNINJAの数だけ
+相手の場の最も攻撃力の弱いUnitをスタンさせる。",
+ASSASSINATE,6,白,Power,-,-,-,Rare,"コスト6以下のUnitを破壊する。
+その後、カードを1枚ドローする。",
+CAVALRY BOT,6,白,Unit,11,11,ROBOT,Common,バニラ,
+SHOCKWAVE TANK,6,白,Unit,7,7,TANK,Epic,"Armor 3
+相手の場にUnitが召喚される度に
+そのUnitはスタンする。",
+TECH AVATAR,6,白,Unit,8,8,ROBOT,Epic,"Armor 2
+Tech系のカードを使用する度に
+このカードのコストが1減少する。",
+SHIELD BOT,6,白,Unit,6,10,ROBOT,Legendary,"Armor 4
+自プレイヤーがダメージを受けるとき
+このUnitが代わりにダメージを受ける。",
+SINGULARITY,6,白,Power,-,-,-,Legendary,自分の手札とデッキの全てのUnitが3コス13/13のUltrabotに変化する。,
+SHIELD FORCE,7,白,Unit,12,10,SOLDIER,Common,Armor 4,
+TAC NUKE,7,白,Power,-,-,-,Legendary,Armorを持っていない全てのUnitを破壊する。,
+MECHADRAGON,7,白,Unit,13,9,ROBOT,Legendary,"Flying, Armor 4
+Attack：相手の場の最も攻撃力の低いUnitを破壊する。",
+REBIRTH,0,緑,Power,-,-,-,Common,自分の墓地のUnitを1枚手札に加える。,
+BROTHER METEOR,1,緑,Unit,3,3,ZOA,Common,Summon：2コス＋3/＋3のBuffカードを手札に加える。,
+ENLARGE,1,緑,Power,-,-,-,Common,Unit1体を＋4/＋4する。,
+FAIRY SENTRY,1,緑,Unit,2,4,FAIRY,Common,Flying,
+MERFOLK HEALER,1,緑,Unit,1,6,MERFOLK,Rare,Active 1：Unit1体を5回復する。,
+MERFOLK SCOUT,1,緑,Unit,3,4,MERFOLK,Common,バニラ,
+MINOTAUR SHAMAN,1,緑,Unit,3,3,MINOTAUR,Rare,"自分の場にNature系のUnitが召喚されたとき
+そのUnitの体力を＋2する。",
+PACK HUNT,1,緑,Power,-,-,-,Common,自分の場のUnitの数×2のダメージをUnit1体に与える。,
+REPLENISH,1,緑,Power,-,-,-,Epic,自分のエネルギーが全回復する。,
+TANGLE,1,緑,Power,-,-,-,Rare,"このターンUnit1体にCan't Attackを付与する。
+対象がFlying持ちだった場合、破壊する。",
+VERDANT DRUID,1,緑,Unit,2,2,DRUID,Rare,"Evade
+ターンの開始にエネルギーを1獲得する。",
+WEB,1,緑,Power,-,-,-,Common,このターン攻撃力7以下のUnitはCan't Attackを付与される。,
+AXE RAGER,2,緑,Unit,5,5,BARBARIAN,Common,Overrun,
+DIRE CRAB,2,緑,Unit,4,8,MONSTER,Common,バニラ,
+MIGHTCASTER,2,緑,Unit,5,4,DRUID,Common,Active 2：Unit１体にOverrunを付与し、＋2/＋2する。,
+MINOTAUR CHARGER,2,緑,Unit,4,4,MINOTAUR,Common,"相手プレイヤーがカードをドローする度に
+このカードを＋2/＋2する。","相手プレイヤーがカードの効果等でドローした場合も
+ドローした枚数だけバフされる。
+"
+MINOTAUR GUIDE,2,緑,Unit,5,4,MINOTAUR,Epic,お互いのプレイヤーは1ターンに１枚のカードしか使用できなくなる。,
+PROLIFERATE,2,緑,Power,-,-,-,Common,"エネルギーを１獲得し、
+最大エネルギーを1増やす。",
+SCION OF LIGHTNING,2,緑,Unit,4,4,DRUID,Common,Active 2：このターン相手Unitの数だけこのカードの攻撃力が＋1される。,
+SHIFTING OOZE,2,緑,Unit,3,3,SHAPESHIFTER,Legendary,Active 1：対象のUnitの攻撃力と体力に変化する。,
+THORN SPRAY,2,緑,Power,-,-,-,Common,相手の場の最も攻撃力の高いUnit2体に3点ダメージを与える。,
+TRANQUILITY,2,緑,Power,-,-,-,Rare,相手の場の全てのUnitをPurifyする。,
+BIOGENESIS,3,緑,Power,-,-,-,Rare,"対象のUnitにRegenerateを付与し、
+自分の場のRegenerateを持っているUnitを全てコピーし手札に加える。",
+CAMOUFLAGE,3,緑,Power,-,-,-,Rare,自分の場の全てのUnitにEvadeを付与する。,
+CONSTRICTOR,3,緑,Unit,6,5,MONSTER,Common,Attack：このターン相手の最も攻撃力の高いUnitはCan't Attackを付与される。,
+FERAL STALKER,3,緑,Unit,6,6,MONSTER,Common,Regenerate,
+FLAMEAXE BARBARIAN,3,緑,Unit,7,6,BARBARIAN,Rare,このカードがダメージを与えたUnitはPurifyされる。,
+FORGE BARBARIAN,3,緑,Unit,6,6,BARBARIAN,Rare,Attack：このカードの次に攻撃するUnitは＋2/＋2される。,"英語表記では、バフはこのターンだけと書いてあるように感じるが、
+実際は永続効果。
+"
+ICE STORM,3,緑,Power,-,-,-,Epic,"相手の場の全てのUnitに3点ダメージを与え、
+このターンCan't Attackを付与する。",
+NATURE BOOST,3,緑,Power,-,-,-,Common,"最大エネルギーが１増加。
+自分の場の最も攻撃力の高いUnitを＋3/＋3する。",
+ROCK GUARDIAN,3,緑,Unit,4,9,ELEMENTAL,Rare,"自分の場のUnitが回復する度に
+そのUnitを＋2/＋2する。",
+ANCIENT EGG,3,緑,Unit,0,3,EGG,Epic,Last Breath：自分のデッキの一番上のUnitを場に召喚する。,
+LEYLINE DRUID,3,緑,Unit,6,6,DRUID,Legendary,"Evade
+全てのカードのコストは3以上になる。",
+SUPERSIZE,3,緑,Power,-,-,-,Legendary,Unit1体の攻撃力と体力を2倍にし、Overrunを付与する。,
+BROTHER BLADE,4,緑,Unit,5,5,ZOA,Rare,"Frenzy
+Summon：2コス＋3/＋3,FrenzyのBuffカードを手札に加える。",
+CAELIA,4,緑,Unit,7,7,FAIRY,Epic,"Flying
+Summon：自分の場の全てのUnitのSummonが発動する。",
+FIRE ELEMENTAL,4,緑,Unit,9,9,ELEMENTAL,Common,バニラ,
+FIREBALL,4,緑,Power,-,-,-,Common,Unit1体に8点ダメージを与える。,
+GLADE DEFENDER,4,緑,Unit,4,4,DRUID,Rare,自分のMaxエネルギーの値だけ攻撃力と体力が＋される。,
+PRIMAL HUNTER,4,緑,Unit,9,9,MONSTER,Epic,"Frenzy
+Active 1：コンバットに入る前に対象のUnitと戦闘することができる。","Active使用時、相手UnitがEvade持ちの場合、
+Evadeを消せるがこちらのUnitだけ一方的にダメージを受ける。
+また、First Strikeの効果も適用される。
+"
+REJUVENATE,4,緑,Power,-,-,-,Common,自分の場の全てのUnitが全回復する。,
+STONESKIN,4,緑,Power,-,-,-,Rare,Unit1体を＋8/＋10する。,
+BRAWL,4,緑,Power,-,-,-,Legendary,最も攻撃力の高いUnit1体以外全てを破壊する。,
+MASTER ZIRELL,4,緑,Unit,8,8,ZOA,Legendary,"Evade
+このカードに使用したPowerカードの効果が
+自分の場の全てのUnitにも適用される。",
+AIR ELEMENTAL,5,緑,Unit,10,10,ELEMENTAL,Rare,Flying,
+LANDSHARK,5,緑,Unit,6,6,MONSTER,Common,Active 3：このターンOverrunが付与され、＋6/＋6される。,
+PHOENIX,5,緑,Unit,8,6,MONSTER,Epic,"Flying
+Last Breath:自分の手札に戻る。",
+SISTER VIGOR,5,緑,Unit,8,8,ZOA,Rare,"Regenerate
+Summon：2コス＋3/＋3,RegenerateのBuffカードを手札に加える。",
+WAVE ELEMENTAL,5,緑,Unit,10,10,ELEMENTAL,Common,Summon：このターンエネルギーを3獲得する。,
+CATACLYSM,6,緑,Power,-,-,-,Epic,お互いのプレイヤーの最大エネルギーが半分になる。,
+HYDRA,6,緑,Unit,12,12,MONSTER,Epic,"Regenerate
+このカードは回復する度に、＋3/＋3される。",
+NATURE AVATAR,6,緑,Unit,9,9,ELEMENTAL,Epic,"Regenerate
+Nature系のカードを使用する度に
+このカードのコストが1減少する。",
+VINE ELEMENTAL,6,緑,Unit,12,8,ELEMENTAL,Common,"Summon：このターン相手の場の最も攻撃力が低いUnit2体に
+Can't Attackを付与する。",
+CENTER ROOT,6,緑,Unit,8,16,ELEMENTAL,Legendary,Attack：自分のデッキの一番上のUnitを場に召喚する。,
+BOAR STAMPEDE,7,緑,Unit,18,18,MONSTER,Rare,このUnitの攻撃力は常に体力と同じになる。,
+EARTH ELEMENTAL,7,緑,Unit,11,11,ELEMENTAL,Epic,自分の場の全てのUnitの攻撃力はこのカードと同じになる。,
+ZENDAK WURM,7,緑,Unit,14,14,MONSTER,Common,バニラ,
+ICE DRAGON,7,緑,Unit,13,13,ELEMENTAL,Legendary,"Flying, Overrun
+Summon：相手の場の全てのUnitに3点ダメージを与え、
+このターンCan't Attackを付与する。",
+KRAKEN,8,緑,Unit,20,20,MONSTER,Epic,"Overrun
+このカードはAttackとBlockそれぞれ一度ずつしか行うことができない。",
+KAIJU,10,緑,Unit,25,25,MONSTER,Legendary,"Evade, Overrun, Regenerate",
+APPRENTICE NECROMANCER,1,紫,Unit,1,1,WIZARD,Common,Last Breath：自分の場に3/3のZombieを召喚する。,
+BOG WISPS,1,紫,Unit,3,3,ILLUSION,Rare,Last Breath：自分の場に3/3のZombieを召喚する。,
+CHILL BOLT,1,紫,Power,-,-,-,Common,対象1体の攻撃力を－5する。,
+INVISIBILITY,1,紫,Power,-,-,-,Common,このターンUnit1体にUnblockableを付与する。,
+KENJI'S DOUBLE,1,紫,Unit,3,3,NINJA,Epic,Infiltrat：このカードのコピーを手札に加える。,
+REAP,1,紫,Power,-,-,-,Rare,自分の場のUnit1体を破壊して、カードを2枚ドローする。,
+TUNNEL KREN,1,紫,Unit,1,5,KREN,Common,Active 1：このターン攻撃力5以下のUnit１体にUnblockableを付与する。,
+VAMPIRE DUKE,1,紫,Unit,2,5,VAMPIRE,Rare,Lifelink,
+ZOMBIE,1,紫,Unit,3,3,ZOMBIE,Common,バニラ,
+ZOMBIFY,1,紫,Power,-,-,-,Rare,"Unit１体に３点ダメージを与える。
+そのターンに対象のUnitが破壊された場合、3/3のゾンビを自分の場に召喚する。",
+BLIND,2,紫,Power,-,-,-,Common,このターン全てのUnitは攻撃力が0になる。,
+BLOOD GOLEM,2,紫,Unit,1,8,CONSTRUCT,Common,Active 2：このUnitを破壊し、自プレイヤーを10回復する。,
+BRUTALIZE,2,紫,Power,-,-,-,Common,攻撃力６以下のUnit１体を破壊する。,
+CIRCLE OF POWER,2,紫,Power,-,-,-,Common,自分の手札とデッキの全てのPowerカードのコストを１減少させる。,
+DÉJÀ VU,2,紫,Power,-,-,-,Epic,"このカードの次に使用したPowerカードのコピーをターン終了時に
+手札に加える（コピーされたカードのコストは1）。",
+FINGER OF DEATH,2,紫,Power,-,-,-,Legendary,"体力または攻撃力が自分の最大エネルギー以下の対象１体を破壊する。
+（相手プレイヤーも含む）。",
+NECROMANCER,2,紫,Unit,3,3,WIZARD,Common,"Can't Block
+Last Breath：カードを２枚ドローする。",
+NIGHT STALKER,2,紫,Unit,3,3,NINJA,Common,Infiltrate:このターン攻撃力を＋４する。,
+NULLMAGE,2,紫,Unit,5,5,WIZARD,Rare,Active 1：このターンUnit１体の攻撃力を－3する。,
+SPECTER,2,紫,Unit,2,5,ILLUSION,Common,このカードからダメージを受けたUnitは破壊される。,
+SPELLWEAVER,2,紫,Unit,3,6,WIZARD,Common,自分のPowerカードのコストを１減少させる。,
+THOUGHT ANOMALY,2,紫,Unit,5,1,ILLUSION,Rare,"Flying, Lifelink",
+TWIST OF FATE,2,紫,Power,-,-,-,Epic,"自分の手札を全て捨てる。
+その後、捨てたカードの数＋１枚をドローする。",
+UNCEASING GOLEM,2,紫,Unit,6,3,CONSTRUCT,Common,Summon：自分の墓地にある全てのUnceansing Golemを手札に戻す。,
+ARCANE BOOST,3,紫,Power,-,-,-,Common,"最大エネルギーが１増加。
+相手の場の全てのUnitの攻撃力を－1する。",
+BEFUDDLE,3,紫,Power,-,-,-,Common,相手の手札の全てのカードのコスが１増加する。,
+BETRAYAL,3,紫,Power,-,-,-,Common,ターン終了時まで相手の場のUnit１体のコントロールを得る。,
+BOUND ABOMINATION,3,紫,Unit,9,9,ZOMBIE,Rare,"このカードはダメージを受けていないとき
+Can't Attackになる。",
+CORPSECRAFTER,3,紫,Unit,3,7,WIZARD,Rare,"相手がPowerカードを使用する度に
+自分の場に3/3のZombieを召喚する。",
+DRAIN LIFE,3,紫,Power,-,-,-,Rare,"相手の場の最も攻撃力の弱いUnitを破壊し、
+破壊したUnitの攻撃力と同じ値を自プレイヤーは回復する。",
+ELF GUARDIAN,3,紫,Unit,4,9,ELF,Common,バニラ,
+ENCHANTED ARMOR,3,紫,Unit,4,4,CONSTRUCT,Rare,Armor 4,
+LANTERN LICH,3,紫,Unit,4,8,ZOMBIE,Rare,"Active 2：自分の場のUnit1体を破壊することで、
+相手プレイヤーに４点ダメージを与え、自プレイヤーは４回復する。",
+LEVITATION,3,紫,Power,-,-,-,Epic,自分の場の全てのUnitはFlyingを持つ。,
+LORD OF ROT,3,紫,Unit,4,4,ZOMBIE,Epic,"自分の場の全てのZombieは＋1/＋1される。
+また、ターンの開始時に3/3のZombie１体を自分の場に召喚する。",
+SECRET CACHE,3,紫,Power,-,-,-,Rare,Powerカードを2枚ドローする。,
+SWORDFLY,3,紫,Unit,5,5,CONSTRUCT,Common,Flying,
+TAR GOLEM,3,紫,Unit,6,6,CONSTRUCT,Rare,"自分の場のCONSTRUCTが破壊される度に、
+相手の手札の最もコストの低いカードのコストが２増加する。",
+ZOMBIE PLAGUE,3,紫,Power,-,-,-,Legendary,お互いの場が3/3のZombieでいっぱいになるようにZombieが召喚される。,レジェンドカードなのに有用な使い方がまだ発見されていない。
+ETHEREAL DEVOURER,4,紫,Unit,5,5,ILLUSION,Common,Unblockable,
+GHOST SHIP,4,紫,Unit,5,7,CONSTRUCT,Common,"Flying, Evade
+",
+GRAND MAGUS,4,紫,Unit,4,7,WIZARD,Epic,ターンの開始時にカードを１枚ドローする。,
+HORRID CADAVER,4,紫,Unit,7,7,ZOMBIE,Rare,"Can't Block
+Last Breath：3/3のZombieを2体召喚する。",
+KORGON OF THE SPIRES,4,紫,Unit,4,8,KREN,Legendary,"Evade
+自分がPowerカードを使う度に、そのカードのコピーを手札に加える。
+ただし、一度コピーしたカードはコピーできない。",
+MURDER,4,紫,Power,-,-,-,Rare,Unit１体を破壊する。,
+PLAGUE OF WEAKNESS,4,紫,Power,-,-,-,Epic,攻撃力が7以下の全てのUnitを破壊する。,
+RISE FROM THE GRAVE,4,紫,Power,-,-,-,Common,自分の墓地のUnit1体を自分の場に召喚する。,
+ERADICATE,5,紫,Power,-,-,-,Legendary,Unit１体を破壊し、そのUnitと同名のカードを全て破壊する。,
+PHANTOM DESTROYER,5,紫,Unit,9,9,ILLUSION,Common,バニラ,
+THE FOUNDATION,5,紫,Unit,8,8,KREN,Epic,"相手の場にUnitが召喚される度に、
+カードを１枚ドローする。",
+IRKHAM DJINN,5,紫,Unit,8,10,DJINN,Legendary,ドローした全てのカードのコストが1になる。,
+ARCANE AVATAR,6,紫,Unit,7,7,ILLUSION,Epic,"Regenerate
+Arcane系のカードを使用する度に
+このカードのコストが1減少する。",
+MIND CONTROL,6,紫,Power,-,-,-,Epic,相手の場の攻撃力9以下のUnit1体のコントロールを得る。,
+VAULT KREN,6,紫,Unit,9,10,KREN,Common,Active 2：このターンFlyingを持つ。,
+DIQUANOMUS,6,紫,Unit,10,10,MONSTER,Epic,"Flying
+Summon and Last Breath：このターン相手の場の全てのUnitの攻撃力を－5する。",
+DRACOLICH,7,紫,Unit,10,18,ZOMBIE,Legendary,"Flying
+このUnitの召喚時および相手Unitが破壊される度に、
+自分の場に3/3のZombieを召喚する。",
+VAMPIRE DUCHESS,7,紫,Unit,8,8,VAMPIRE,Rare,Lifelink,
+GRASPING HORROR,7,紫,Unit,8,8,MONSTER,Epic,Active 3：相手の場の最も攻撃力の低いUnitのコントロールを奪う。,
+QUEEN ORDELIA,8,紫,Unit,10,10,VAMPIRE,Legendary,"Evade
+相手の場のUnitが破壊される度に、
+そのUnitはこちらの場に召喚される。",
+MIRROR IMAGE,9,紫,Power,-,-,-,Legendary,Unit１体をコピーし、場に召喚する。,
